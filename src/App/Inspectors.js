@@ -23,7 +23,7 @@ function parents(el, selector) {
         parents.push(el);
         el = el.parentNode.closest(selector);
     }
-    return parents;
+    return parents.reverse();
 }
 
 export function Inspectors({target}) {

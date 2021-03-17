@@ -6,9 +6,9 @@ import {getById} from "../reducers";
 export default function App() {
     return (
         <EditMode>
-            <Wrapper component={Print} id="dashboard-header">
-                <Wrapper component={Print} id="dashboard-body"/>
-                <Wrapper component={Button} id="dashboard-button"/>
+            <Wrapper component={Print} id="dashboard.header">
+                <Wrapper component={Print} id="dashboard.body"/>
+                <Wrapper component={Button} id="dashboard.button"/>
             </Wrapper>
         </EditMode>
     );

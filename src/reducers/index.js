@@ -28,7 +28,7 @@ export default function appReducer(state = initialState, action) {
 }
 
 export function getById(state, id) {
-    return getProps(state, id.split('-'), 0);
+    return getProps(state, id.split('.'), 0);
 }
 
 function getProps(state, ids, index = 0) {
@@ -39,7 +39,7 @@ function getProps(state, ids, index = 0) {
 }
 
 export function insertAtId(state, id, value) {
-    return setProps(state, id.split('-'), value, 0);
+    return setProps(state, id.split('.'), value, 0);
 }
 
 function setProps(state, ids, value, index = 0) {
